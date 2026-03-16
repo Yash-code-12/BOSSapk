@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOSSapk Community</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to right, #14ffec, #0ff);
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      border-bottom: 5px solid #0f172a;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.05;
+      z-index: 1;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4.5rem;
+      color: #0f172a;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 0 10px #00ffe7;
+    }
+    header p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #0f172a;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 0 6px #00f0ff;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .intro h2 {
+      font-size: 3rem;
+      color: #38f9d7;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 12px #00ffe0;
+    }
+    .intro p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 750px;
+      margin: auto;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+    .card {
+      background: radial-gradient(circle at top, #1f2937, #111827);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(0, 255, 234, 0.2);
+      border: 2px solid #00ffc3;
+      transition: transform 0.4s, box-shadow 0.4s;
+      backdrop-filter: blur(4px);
+    }
+    .card:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 255, 234, 0.4);
+    }
+    .card h3 {
+      font-size: 1.8rem;
+      color: #00e0ff;
+      margin-bottom: 0.7rem;
+    }
+    .card p {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.9rem 1.7rem;
+      background: linear-gradient(to right, #00ffb8, #00d9ff);
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 2rem;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 12px #00ffc3;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    a.button:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px #00ffc3, 0 0 30px #00e0ff;
+    }
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 2rem;
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+      border-top: 1px solid #1f2937;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- or use PNG -->
+<link rel="icon" href="Minecraft2.jpeg" type="image/png">
+<body>
+  <header>
+    <h1>BOSSapk</h1>
+    <p>The Ultimate Minecraft Download Community</p>
+  </header>
+
+  <div class="container">
+    <section class="intro">
+      <h2>Welcome to the Community</h2>
+      <p>Explore, share, and collaborate with Minecraft lovers just like you. Join discussions, showcase your skills, and enjoy exclusive mods and events.</p>
+    </section>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Community Builds</h3>
+        <p>Explore breathtaking Minecraft creations from our members or share your epic constructions.</p>
+        <a href="#" class="button">View Gallery</a>
+      </div>
+      <div class="card">
+        <h3>Mod Marketplace</h3>
+        <p>Discover and share powerful mods made by fellow gamers. Rated and reviewed by the community.</p>
+        <a href="#" class="button">Browse Mods</a>
+      </div>
+      <div class="card">
+        <h3>Help & Tutorials</h3>
+        <p>New to Minecraft or need expert advice? Find step-by-step guides and community support here.</p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Events & Giveaways</h3>
+        <p>Join exciting build contests, live events, and win exclusive Minecraft rewards and merch!</p>
+        <a href="#" class="button">Join Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BOSSapk • Powered by Webo Republics ™
+  </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+body{
+        background-color: black;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+
+}
+    @media (max-width: 768px) {
+        /* Styles for screens smaller than 768px */
+        .container {
+            flex-direction: column;
+        }
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+     font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+}
+
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+   padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.home a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(75, 189, 224);;
+}
+.home a:hover{
+    color: white;
+}
+
+.about a{
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(75, 189, 224);
+}
+.about a:hover{
+    color: white;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-family: "Poppins","sans-serif";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: rgb(237, 243, 245);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero h1 span{
+
+    color: rgb(0, 174, 255);
+}
+
+.h1{
+    color: aqua;
+}
+@keyframes glow {
+  from{ text-shado: 0 0 5px #00bfff, 0 0 10px #00bfff; }
+   to{ text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
+
+}
+.heading{
+    color: white;
+}
+
+
+.hero{
+          height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: center;
+      background: linear-gradient(120deg, #000000 0%, #0d1a26 100%);
+      text-align: center;
+      padding: 2rem;
+      background-attachment: fixed;
+}
+
+.hero p{
+    max-width: 700px;
+    font-size: 1.3rem;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: Poppins;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: #00bfff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.btn:hover{
+    color: #66d9ff;
+    transform: scale(1.05);
+}

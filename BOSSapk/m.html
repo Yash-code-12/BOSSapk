@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOSSapk Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: #f8fafc;
+      padding: 2rem 1rem;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background: linear-gradient(to right, #00ffb8, #00d9ff);
+      border-bottom: 5px solid #0f172a;
+      box-shadow: 0 0 20px rgba(0,255,234,0.3);
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.7rem;
+      color: #0f172a;
+      text-shadow: 0 0 10px #00ffe7;
+    }
+    header p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #0f172a;
+    }
+    .support-container {
+      max-width: 720px;
+      margin: 3rem auto;
+      background: #1e293b;
+      padding: 2.5rem;
+      border-radius: 1.8rem;
+      box-shadow: 0 0 30px rgba(0,255,234,0.2);
+      border: 2px solid #00ffc3;
+    }
+    .support-container h2 {
+      font-size: 2.2rem;
+      color: #38f9d7;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-shadow: 0 0 6px #00ffd5;
+    }
+    .support-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .support-container label {
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+      color: #cbd5e1;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .support-container input, .support-container textarea {
+      padding: 0.85rem;
+      border-radius: 0.6rem;
+      border: none;
+      background: #334155;
+      color: #fff;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .support-container input:focus, .support-container textarea:focus {
+      background: #475569;
+      outline: none;
+    }
+    .support-container button {
+      margin-top: 2rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 2rem;
+      background: linear-gradient(to right, #00ffb8, #00d9ff);
+      color: #0f172a;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .support-container button:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 18px #00ffc3;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BOSSapk</h1>
+    <p>Support Center</p>
+  </header>
+
+  <div class="support-container">
+    <h2>Need Help with Minecraft Downloads?</h2>
+    <form action="https://formsubmit.co/yashpatel505p@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Support Request from BOSSapk">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Describe Your Issue</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your issue here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 BOSSapk • Powered by Webo Republics ™
+  </footer>
+</body>
+</html>
